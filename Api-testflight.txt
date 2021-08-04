@@ -1,0 +1,75 @@
+GET /v2/accounts//apps//builds/ HTTP/1.1
+Host: testflight.apple.com
+Content-Type: application/json
+Accept: application/json
+X-Session-Id: 
+X-Session-Digest: 
+X-Active-Devices: 
+Accept-Encoding: gzip, deflate
+Accept-Language: ar
+X-Apple-Ta-Device: 
+X-Request-Id: 
+User-Agent: Oasis/3.1.0 OasisBuild/23 iOS/13.2.3 model/iPhone11,2 hwp/t8020 build/17B111 (6; dt:185) AMS/1 TSE/0
+Connection: close
+
+
+-----------------------------
+GET /v1/accounts/settings/notifications/apps/ HTTP/1.1
+Host: testflight.apple.com
+Content-Type: application/json
+Accept: application/json
+X-Session-Id: 
+X-Session-Digest: 
+X-Active-Devices: 
+Accept-Encoding: gzip, deflate
+Accept-Language: ar
+X-Apple-Ta-Device: 
+X-Request-Id:
+User-Agent: Oasis/3.1.0 OasisBuild/23 iOS/13.2.3 model/iPhone11,2 hwp/t8020 build/17B111 (6; dt:185) AMS/1 TSE/0
+Connection: close
+------------------------------------------------------------------
+POST /v1/apps///install/status HTTP/1.1
+Host: testflight.apple.com
+Content-Type: application/json
+Accept: application/json
+X-Session-Id: 
+X-Session-Digest: 
+X-Active-Devices: 
+Accept-Encoding: gzip, deflate
+X-Apple-Ta-Device: 
+Accept-Language: ar
+X-Request-Id: 
+Content-Length: 126
+User-Agent: Oasis/3.1.0 OasisBuild/23 iOS/15.2.3 model/iPhone11,2 hwp/t8020 build/17B111 (6; dt:185) AMS/1 TSE/0
+Connection: close
+
+{
+  "status" : "cancel",
+  "isFromAutoUpdate" : false,
+  "bundleId" : "com.tomatamara.stickermaker",
+  "installType" : "app"
+}
+-------------------------------------------------------------
+POST /v2/accounts//apps//builds//install HTTP/1.1
+Host: testflight.apple.com
+Content-Type: application/json
+Accept: application/json
+X-Session-Id: 
+X-Session-Digest: 
+X-Active-Devices: 
+Accept-Encoding: gzip, deflate
+X-Apple-Ta-Device: 
+Accept-Language: ar
+X-Request-Id: 
+Content-Length: 142
+User-Agent: Oasis/3.1.0 OasisBuild/23 iOS/15.2.3 model/iPhone11,2 hwp/t8020 build/17B111 (6; dt:185) AMS/1 TSE/0
+Connection: close
+
+{
+  "kbSync" : "0",
+  "storefrontId" : "0",
+  "purchaseKbSync" : "",
+  "isFromAutoUpdate" : false,
+  "udid" : "0",
+  "deviceName" : "Python"
+}
